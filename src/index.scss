@@ -1,3 +1,6 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+
 body {
   color: red($color: #000000);
   margin: 0;
@@ -62,5 +65,10 @@ footer p {
     font-size: 3.5rem;
   }
 }
+ 
+.my-op{
+  color: #fff;
+  background-color: #ff9100;
+  border-color: #fff;
 
-@import '~bootstrap/scss/bootstrap.scss';
+}
