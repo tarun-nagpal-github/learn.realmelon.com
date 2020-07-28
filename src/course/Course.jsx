@@ -1,41 +1,29 @@
 import React from "react";
 function Course(prop) {
   return (
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
-        <svg
-          class="bd-placeholder-img card-img-top"
-          width="100%"
-          height="225"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-          role="img"
-          aria-label="Placeholder: Thumbnail"
-        >
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em" >
-            {prop.title}
-          </text>
-        </svg>
+    <div class="col-md-3"> 
+    <div class="card" style={{width: "11rem", height: "15rem"}}>
+  <img      width="100%"
+          height="125" class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image top" />
         <div class="card-body">
+        <h4 class="card-title">{prop.title}</h4>
           <p class="card-text">
             {prop.description}
           </p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">
-                View
+                Start Course
               </button>
-              <button type="button" class="btn btn-sm btn-outline-secondary">
+              {/* <button type="button" class="btn btn-sm btn-outline-secondary">
                 Edit
-              </button>
+              </button> */}
             </div>
-            <small class="text-muted">9 mins</small>
+            {/* <small class="text-muted">Free</small> */}
           </div>
         </div>
-      </div>
+</div>
+ 
     </div>
   );
 }
